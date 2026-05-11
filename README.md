@@ -21,6 +21,3 @@ Open `http://localhost:3000`.
 
 No external packages are required.
 =======
-# ecommerce-website
-“Online store project with cart, products, and checkout system”
->>>>>>> 6950374d9a8161426f1a874a8de0dbcd876e76e3
