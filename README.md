@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MarketLane Ecommerce
 
 A small full-stack ecommerce demo with an HTML storefront, responsive CSS, browser cart, and Node.js backend APIs.
@@ -19,3 +20,7 @@ Open `http://localhost:3000`.
 - `data/orders.json` stores submitted orders locally.
 
 No external packages are required.
+=======
+# ecommerce-website
+“Online store project with cart, products, and checkout system”
+>>>>>>> 6950374d9a8161426f1a874a8de0dbcd876e76e3
