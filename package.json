@@ -1,0 +1,16 @@
+{
+  "name": "marketlane-ecommerce",
+  "version": "1.0.0",
+  "description": "A full-stack ecommerce demo with an HTML storefront and Node.js API.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "ecommerce",
+    "html",
+    "node"
+  ],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MarketLane Ecommerce</title>
+    <link rel="stylesheet" href="02-styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="MarketLane home">
+        <span class="brand-mark">M</span>
+        <span>MarketLane</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#shop">Shop</a>
+        <a href="#checkout">Checkout</a>
+      </nav>
+      <button class="cart-button" type="button" id="cartToggle" aria-label="Open cart">
+        Cart <span id="cartCount">0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">New season essentials</p>
+          <h1>Modern goods for sharp everyday living.</h1>
+          <p>Browse curated apparel, home pieces, tech, and carry goods, then place a working demo order through the Node backend.</p>
+          <a class="primary-link" href="#shop">Shop collection</a>
+        </div>
+      </section>
+
+      <section class="shop-section" id="shop">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Catalog</p>
+            <h2>Featured Products</h2>
+          </div>
+          <label class="filter-control">
+            <span>Category</span>
+            <select id="categoryFilter">
+              <option value="All">All</option>
+            </select>
+          </label>
+        </div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="checkout-section" id="checkout">
+        <div class="checkout-layout">
+          <div>
+            <p class="eyebrow">Secure checkout</p>
+            <h2>Finish Your Order</h2>
+            <p class="checkout-note">This demo stores orders in <strong>data/orders.json</strong> and returns a real confirmation number.</p>
+          </div>
+
+          <form class="checkout-form" id="checkoutForm">
+            <label>
+              Full name
+              <input name="name" autocomplete="name" required>
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required>
+            </label>
+            <label>
+              Shipping address
+              <textarea name="address" rows="4" autocomplete="street-address" required></textarea>
+            </label>
+            <button class="checkout-button" type="submit">Place order</button>
+            <p class="form-message" id="formMessage" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button type="button" id="closeCart" aria-label="Close cart">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-summary">
+        <div><span>Subtotal</span><strong id="subtotal">$0.00</strong></div>
+        <div><span>Shipping</span><strong id="shipping">$0.00</strong></div>
+        <div><span>Tax</span><strong id="tax">$0.00</strong></div>
+        <div class="total-row"><span>Total</span><strong id="total">$0.00</strong></div>
+      </div>
+      <a class="checkout-jump" href="#checkout">Go to checkout</a>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
